@@ -24,6 +24,7 @@
 		F09038C2279A013D007609BB /* Movie_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09038C1279A013D007609BB /* Movie_AppUITests.swift */; };
 		F09038C4279A013D007609BB /* Movie_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09038C3279A013D007609BB /* Movie_AppUITestsLaunchTests.swift */; };
 		F09DBBFE27AEDF0B009EBD29 /* MovieGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09DBBFD27AEDF0B009EBD29 /* MovieGridViewController.swift */; };
+		F0C3580B27B0C48D00314C31 /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C3580A27B0C48D00314C31 /* SuperViewController.swift */; };
 		F0E2D15827AB974E00900FA5 /* MovieGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E2D15727AB974E00900FA5 /* MovieGridCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		F09038C1279A013D007609BB /* Movie_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_AppUITests.swift; sourceTree = "<group>"; };
 		F09038C3279A013D007609BB /* Movie_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F09DBBFD27AEDF0B009EBD29 /* MovieGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MovieGridViewController.swift; path = ../MovieGridViewController.swift; sourceTree = "<group>"; };
+		F0C3580A27B0C48D00314C31 /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
 		F0E2D15727AB974E00900FA5 /* MovieGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,8 +149,9 @@
 				F09038AB279A013C007609BB /* LaunchScreen.storyboard */,
 				F09038AE279A013C007609BB /* Info.plist */,
 				F09038A4279A013B007609BB /* ViewController.swift */,
-				F09DBBFD27AEDF0B009EBD29 /* MovieGridViewController.swift */,
 				F068F32927A9DA290083F3E4 /* MovieDetailsViewController.swift */,
+				F09DBBFD27AEDF0B009EBD29 /* MovieGridViewController.swift */,
+				F0C3580A27B0C48D00314C31 /* SuperViewController.swift */,
 			);
 			path = "Movie App";
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 			files = (
 				F09038A5279A013B007609BB /* ViewController.swift in Sources */,
 				F09038A1279A013B007609BB /* AppDelegate.swift in Sources */,
+				F0C3580B27B0C48D00314C31 /* SuperViewController.swift in Sources */,
 				F068F32A27A9DA290083F3E4 /* MovieDetailsViewController.swift in Sources */,
 				F09DBBFE27AEDF0B009EBD29 /* MovieGridViewController.swift in Sources */,
 				F0E2D15827AB974E00900FA5 /* MovieGridCell.swift in Sources */,

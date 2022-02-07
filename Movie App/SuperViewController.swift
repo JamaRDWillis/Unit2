@@ -1,27 +1,21 @@
 //
-//  MovieDetailsViewController.swift
+//  SuperViewController.swift
 //  Movie App
 //
-//  Created by user211074 on 2/1/22.
+//  Created by user211074 on 2/6/22.
 //
 
 import UIKit
-import AlamofireImage
- 
-class MovieDetailsViewController: UIViewController {
+
+class SuperViewController: UIViewController {
+    var movie:[String:Any]!
     
-    
-    @IBOutlet weak var backDropView: UIImageView!
+    @IBOutlet weak var backView: UIImageView!
+    @IBOutlet weak var summmaryLabel: UILabel!
     @IBOutlet weak var posterView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var summaryLabel: UILabel!
-    
-    var movie:[String:Any]!
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    
         let baseUrl = "https://image.tmdb.org/t/p/w185"
         
         let posterPath = movie["poster_path"] as! String
@@ -30,24 +24,21 @@ class MovieDetailsViewController: UIViewController {
         
         let backdropPath = movie["backdrop_path"] as! String
         let backdropUrl = URL(string:"https://image.tmdb.org/t/p/w780" + backdropPath)
-        backDropView.af.setImage(withURL: backdropUrl!)
+        backView.af.setImage(withURL: backdropUrl!)
         
         
         titleLabel.text=movie["title"] as? String
         titleLabel.sizeToFit()
         
-        summaryLabel.text=movie["overview"] as? String
-        summaryLabel.sizeToFit()
-        
-        
-        
+        summmaryLabel.text=movie["overview"] as? String
+        summmaryLabel.sizeToFit()        // Do any additional setup after loading the view.
     }
     
 
     /*
     // MARK: - Navigation
 
-    // In a storyhboard-based application, you will often want to do a little preparation before navigation
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
